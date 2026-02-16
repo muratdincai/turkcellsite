@@ -125,11 +125,11 @@ export const translations: Record<'tr' | 'en', Translation> = {
                     role: 'Operasyon Uzmanı (Anonim)',
                 },
                 {
-                    quote: 'Sohbet ederken aynı anda PDF\'i sağ panelde doğrulayabilmek büyük fark yaratıyor. \'Kaynağa dayalı\' çalışma hissi çok güçlü.',
+                    quote: 'Sohbet ederken aynı anda PDF&#39;i sağ panelde doğrulayabilmek büyük fark yaratıyor. &#39;Kaynağa dayalı&#39; çalışma hissi çok güçlü.',
                     role: 'Analist (Anonim)',
                 },
                 {
-                    quote: 'Yanıtların hızlı gelmesi ve raporda olmayan bilgiye \'yok\' demesi, sahada kullanım için kritik. Uydurma üretmiyor.',
+                    quote: 'Yanıtların hızlı gelmesi ve raporda olmayan bilgiye &#39;yok&#39; demesi, sahada kullanım için kritik. Uydurma üretmiyor.',
                     role: 'Uyum & Risk (Anonim)',
                 },
                 {
@@ -221,11 +221,11 @@ export const translations: Record<'tr' | 'en', Translation> = {
                     role: 'Analyst (Anonymous)',
                 },
                 {
-                    quote: 'Fast responses and clearly saying \'not in the report\' is critical in practice. It doesn\'t fabricate.',
+                    quote: 'Fast responses and clearly saying &#39;not in the report&#39; is critical in practice. It doesn&#39;t fabricate.',
                     role: 'Compliance & Risk (Anonymous)',
                 },
                 {
-                    quote: 'Even for long analyses, the UI doesn\'t freeze and the live process flow noticeably improves the experience.',
+                    quote: 'Even for long analyses, the UI doesn&#39;t freeze and the live process flow noticeably improves the experience.',
                     role: 'Manager (Anonymous)',
                 },
             ],
@@ -289,7 +289,7 @@ export const teamData: TeamMember[] = [
         photo: '/murat/avatar.jpeg',
     },
     {
-        name: 'Miray İncibaşaran',
+        name: 'Miray İnci Başaran',
         role_tr: 'İstatistik Mühendisi',
         role_en: 'Statistics Engineer',
         bio_tr: 'Hacettepe Üniversitesi İstatistik Bölümü 3. sınıf öğrencisiyim. Hacettepe İststistik ve Veri Bilimi Topluluğu (HÜİST) Yönetim Kurulu Başkanı ve Türkiye Girişimcilik Vakfı (GİRVAK) Fellow\'u olarak liderlik ve topluluk geliştirme çalışmalarında aktif rol alıyorum. Veriyi yalnızca analiz edilen bir çıktı değil, doğru kullanıldığında dönüşüm yaratan güçlü bir araç olarak görüyorum. Uzun vadede veri temelli karar alma süreçlerini daha erişilebilir, güvenilir ve etkili hâle getiren sistemler geliştirmeyi amaçlıyorum.',

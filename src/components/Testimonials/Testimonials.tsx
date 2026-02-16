@@ -16,7 +16,7 @@ export function Testimonials() {
                 <div className={styles.grid}>
                     {t.testimonials.feedback.map((item, index) => (
                         <Card key={index} hover className={styles.card}>
-                            <div className={styles.quoteMark}>"</div>
+                            <div className={styles.quoteMark}>&quot;</div>
                             <p className={styles.quote}>{item.quote}</p>
                             <div className={styles.author}>
                                 <div className={styles.avatar}>

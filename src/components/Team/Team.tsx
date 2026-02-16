@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card } from '@/components/Card/Card';
 import { SectionContainer } from '@/components/SectionContainer/SectionContainer';
@@ -18,10 +19,12 @@ export function Team() {
                 {teamData.map((member, index) => (
                     <Card key={index} className={styles.card}>
                         <div className={styles.imageContainer}>
-                            <img
+                            <Image
                                 src={member.photo}
                                 alt={language === 'tr' ? `${member.name} profil fotoğrafı` : `${member.name} profile photo`}
                                 className={styles.avatar}
+                                width={260}
+                                height={260}
                             />
                         </div>
                         <h3 className={styles.name}>{member.name}</h3>

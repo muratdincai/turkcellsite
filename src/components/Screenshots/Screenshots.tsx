@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import styles from './Screenshots.module.css';
 
@@ -85,10 +86,13 @@ export function Screenshots() {
                     >
                         {IMAGES.map((img, index) => (
                             <div key={index} className={styles.carouselSlide}>
-                                <img
+                                <Image
                                     src={img}
                                     alt={`Demo screenshot ${index + 1}`}
                                     className={styles.slideImage}
+                                    width={1200}
+                                    height={700}
+                                    style={{ width: '100%', height: 'auto' }}
                                 />
                             </div>
                         ))}

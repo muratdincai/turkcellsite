@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/Button/Button';
 import { SectionContainer } from '@/components/SectionContainer/SectionContainer';
@@ -29,10 +30,13 @@ export function Demo() {
                     onKeyDown={(e) => e.key === 'Enter' && handleOpenDemo()}
                     aria-label="Turk3cell Demo Video"
                 >
-                    <img
+                    <Image
                         src="/ss/1.jpeg"
                         alt="Turk3cell Demo Preview"
                         className={styles.coverImage}
+                        width={1200}
+                        height={700}
+                        style={{ width: '100%', height: 'auto' }}
                     />
                     <div className={styles.playOverlay}>
                         <div className={styles.playButton}>
