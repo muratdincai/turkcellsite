@@ -1,0 +1,83 @@
+.button {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--radius-lg);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:focus {
+    outline: 2px solid var(--color-accent-yellow);
+    outline-offset: 2px;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Primary button - Yellow accent on blue */
+.primary {
+    background: var(--color-accent-yellow);
+    color: var(--color-primary-blue);
+    box-shadow: var(--shadow-md);
+}
+
+.primary:hover:not(:disabled) {
+    background: #ffcc3d;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg), var(--shadow-glow-yellow);
+}
+
+.primary:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Secondary button - Blue with border */
+.secondary {
+    background: var(--color-primary-blue);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary-blue);
+    box-shadow: var(--shadow-md);
+}
+
+.secondary:hover:not(:disabled) {
+    background: #1a4a96;
+    border-color: #1a4a96;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg), var(--shadow-glow-blue);
+}
+
+.secondary:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Ghost button - Transparent with border */
+.ghost {
+    background: transparent;
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+}
+
+.ghost:hover:not(:disabled) {
+    background: rgba(10, 42, 102, 0.05);
+    border-color: var(--color-accent-yellow);
+    color: var(--color-accent-yellow);
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+    .button {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--font-size-sm);
+    }
+}

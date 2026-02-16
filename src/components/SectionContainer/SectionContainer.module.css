@@ -1,0 +1,27 @@
+.section {
+    padding: var(--spacing-4xl) 0;
+    position: relative;
+}
+
+.container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* Responsive padding */
+@media (max-width: 1024px) {
+    .section {
+        padding: var(--spacing-4xl) 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+}
